@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <title>Hangman Game</title>
 
-    <!--Link to javascript file-->
-    <script src="assets/javascript/game.js"></script>
-
     <!--Link to css reset file-->
     <link rel="stylesheet" href="assets/css/reset.css">
 
@@ -17,13 +14,22 @@
 
 </head>
 <body>
-    <div class="jumbotron">
-        <h1 class="display-1 text-center text-aqua" id="title">Hangman!</h1>
+    <div class="jumbotron" id="topGraphic">
+        <h1 class="display-1 text-center" id="title">Hangman!</h1>
         <hr class="my-4">
         <p class="text-center" id="beginPlay">Press any button to begin playing</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button"></a>
     </div>
 
-
+    <div class="row">
+        <div class="col-6" id="playSpace">
+            <h2 class="display-4 text-left">Word to Guess:</h2>
+            <h3 class="display-4 text-center">word!</h3>
+            <h4 id="wins">You have won: </h4>
+            <h4 id="guessesLeft">Guesses Left: </h4>
+            <h4 id="lettersGuessed">Letters Guessed: </h4>
+        </div>
+        <div class="col-6">Filler for now</div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>

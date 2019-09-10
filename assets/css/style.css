@@ -1,3 +1,24 @@
+#topGraphic {
+    background: #da11a7;
+    margin-bottom: 0%;
+}
+
 #title {
     color: #1cb2b8;
+}
+
+h2 {
+    color: #d6e41b
+}
+
+h4 {
+    color: #14c23a
+}
+
+h3 {
+    color: #d62e17
+}
+
+#playSpace {
+    background: #2809d4
 }
