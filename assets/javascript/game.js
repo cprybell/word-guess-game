@@ -1,4 +1,4 @@
-var words = ["blue", "yellow", "orange"];
+var words = ["blue", "yellow", "orange", "aliceblue", "aqua", "azure", "beige", "black", "brown", "coral", "crimson", "cyan", "fuchsia", "gold", "gray", "indigo", "khaki", "lime", "linen", "maroon", "magenta", "navy", "olive", "orchid", "pink", "peru", "plum", "purple", "silver", "teal", "white"];
 var wordToGuess = "";
 var wordToGuessString = [];
 var lettersGuessed = [];
@@ -81,8 +81,6 @@ var fillWord = function(word, letterArray, letter) {
     }
 }
 
-console.log(wordToGuess.length);
-
 initializeGame();
 
 document.onkeyup = function(event) {
@@ -107,10 +105,7 @@ document.onkeyup = function(event) {
     }
     
     else if (guessesLeft == 0) {
+        colorField.style.backgroundColor = "white";
         resetGame();
     }
-
-    console.log(wordToGuess);
-    console.log(winCounter);
-    console.log(wordToGuess.length);
 }
