@@ -10,6 +10,7 @@ var guessesHTML = document.getElementById("guessesLeft");
 var letterGuessedHTML = document.getElementById("lettersGuessed");
 var winCounter = 0;
 var compareLength = 0;
+var colorField = document.getElementById("colorField");
 
 var randomWord = function(arrayIn) {
     var randomNumber = Math.floor(Math.random() * arrayIn.length);
@@ -101,6 +102,7 @@ document.onkeyup = function(event) {
 
     if (winCounter == wordToGuess.length) {
         wins++;
+        colorField.style.backgroundColor = wordToGuess;
         resetGame();
     }
     
