@@ -2,7 +2,7 @@ var words = ["blue", "yellow", "orange", "aliceblue", "aqua", "azure", "beige", 
 var wordToGuess = "";
 var wordToGuessString = [];
 var lettersGuessed = [];
-var guessesLeft = 10;
+var guessesLeft = 12;
 var wins = 0;
 var gameWord = document.getElementById("wordGuess");
 var winHTML = document.getElementById("wins");
@@ -27,7 +27,7 @@ var createEmptyString = function(word) {
 
 var resetGame = function() {
     winCounter = 0;
-    guessesLeft = 10;
+    guessesLeft = 12;
     lettersGuessed = [];
     wordToGuess = randomWord(words);
     console.log(wordToGuess);
