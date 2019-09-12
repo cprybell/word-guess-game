@@ -8,17 +8,16 @@
 }
 
 h2 {
-    color: #d6e41b
+    color: #db0ea8;
 }
 
 h4 {
-    color: #14c23a
+    color: #be720e;
 }
 
 h3 {
-    color: #d62e17
+    color: #d62e17;
 }
 
 #playSpace {
-    background: #2809d4
-}
+    background-image: linear-gradient(to right, green,yellow, blue);
