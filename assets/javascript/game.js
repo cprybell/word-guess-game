@@ -25,17 +25,6 @@ var createEmptyString = function(word) {
     return stringToReturn;
 }
 
-var initializeGame = function() {
-    wordToGuess = randomWord(words);
-    //compareLength = wordToGuess.
-    console.log(wordToGuess);
-    wordToGuessString = createEmptyString(wordToGuess);
-    gameWord.textContent = wordToGuessString;
-    winHTML.textContent = "You have won: " + wins;
-    guessesHTML.textContent = "Guesses Left: " + guessesLeft;
-    letterGuessedHTML.textContent = "Letters Guessed: " + lettersGuessed;
-}
-
 var resetGame = function() {
     winCounter = 0;
     guessesLeft = 10;
@@ -81,7 +70,7 @@ var fillWord = function(word, letterArray, letter) {
     }
 }
 
-initializeGame();
+resetGame();
 
 document.onkeyup = function(event) {
     var userGuess = event.key;

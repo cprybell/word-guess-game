@@ -14,21 +14,25 @@
 
 </head>
 <body>
-    <div class="jumbotron" id="topGraphic">
-        <h1 class="display-1 text-center" id="title">COLOR HANGMAN!</h1>
-        <hr class="my-4">
-        <p class="text-center" id="beginPlay">Press letters to try and guess the color</p>
-    </div>
-
-    <div class="row">
-        <div class="col-6" id="playSpace">
-            <h2 class="display-4 text-left">Word to Guess:</h2>
-            <h3 class="display-4 text-center" id="wordGuess">word!</h3>
-            <h4 id="wins">You have won: </h4>
-            <h4 id="guessesLeft">Guesses Left: </h4>
-            <h4 id="lettersGuessed">Letters Guessed: </h4>
+    <div class = "container m-x-0">
+        <div class="jumbotron" id="topGraphic">
+            <h1 class="display-1 text-center" id="title">COLOR HANGMAN!</h1>
+            <hr class="my-4">
+            <p class="text-center" id="beginPlay">Press letters to try and guess the color</p>
         </div>
-        <div class="col-6" id="colorField"></div>
+
+        <div class="container m-x-0">
+            <div class="row">
+                <div class="col-6" id="playSpace">
+                    <h2 class="display-4 text-left">Word to Guess:</h2>
+                    <h3 class="display-4 text-center" id="wordGuess">word!</h3>
+                    <h4 id="wins">You have won: </h4>
+                    <h4 id="guessesLeft">Guesses Left: </h4>
+                    <h4 id="lettersGuessed">Letters Guessed: </h4>
+                </div>
+                <div class="col-6" id="colorField"></div>
+            </div>
+        </div>
     </div>
     <script src="assets/javascript/game.js"></script>
 </body>
